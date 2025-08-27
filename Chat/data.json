@@ -1,0 +1,9 @@
+{
+  "chatFormat": "{user}: {message}",
+  "chatFont": "Huglove",
+  "chatSize": 30,
+  "chatColourR": 255,
+  "chatColourG": 0,
+  "chatColourB": 0,
+  "chatMessageDelete": 5
+}

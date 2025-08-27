@@ -1,0 +1,11 @@
+{
+  "startingTime": 10,
+  "timerFont": "Huglove",
+  "timerText": "< Starting in {timer}... >",
+  "timerSize": 80,
+  "timerFontBolt": false,
+  "timerFontBold": "false",
+  "timerColourR": 238,
+  "timerColourG": 112,
+  "timerColourB": 28
+}

@@ -1,0 +1,46 @@
+{
+  "chatFormat": {
+    "type": "string",
+    "label": "Format: ({user}, {message})",
+    "value": "{user}: {message}"
+  },
+  "chatFont": {
+    "type": "string",
+    "label": "Font for Chat:",
+    "value": "sans-serif"
+  },
+  "chatSize": {
+    "type": "number",
+    "label": "Size of the Chat in Pixels:",
+    "value": 20
+  },
+  "chatMessageDelete": {
+    "type": "number",
+    "label": "Delay for Message Delete:",
+    "value": 5
+  },
+  "chatColourR": {
+    "type": "slider",
+    "label": "Colour Red:",
+    "value": 0,
+    "min": 0,
+    "max": 255,
+    "step": 1
+  },
+  "chatColourG": {
+    "type": "slider",
+    "label": "Colour Green:",
+    "value": 0,
+    "min": 0,
+    "max": 255,
+    "step": 1
+  },
+  "chatColourB": {
+    "type": "slider",
+    "label": "Colour Blue:",
+    "value": 0,
+    "min": 0,
+    "max": 255,
+    "step": 1
+  }
+}

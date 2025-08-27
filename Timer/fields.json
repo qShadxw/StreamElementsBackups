@@ -1,0 +1,46 @@
+{
+  "timerText": {
+    "type": "string",
+    "label": "Timer Text (Placeholders: {timer}):",
+    "value": "Starting in {timer}..."
+  },
+  "timerFont": {
+    "type": "string",
+    "label": "Font for Timer:",
+    "value": "sans-serif"
+  },
+  "timerSize": {
+    "type": "number",
+    "label": "Size of the Timer in Pixels:",
+    "value": 20
+  },
+  "startingTime": {
+    "type": "number",
+    "label": "Starting time for Timer (In Minutes):",
+    "value": 5
+  },
+  "timerColourR": {
+    "type": "slider",
+    "label": "Colour Red:",
+    "value": 0,
+    "min": 0,
+    "max": 255,
+    "step": 1
+  },
+  "timerColourG": {
+    "type": "slider",
+    "label": "Colour Green:",
+    "value": 0,
+    "min": 0,
+    "max": 255,
+    "step": 1
+  },
+  "timerColourB": {
+    "type": "slider",
+    "label": "Colour Blue:",
+    "value": 0,
+    "min": 0,
+    "max": 255,
+    "step": 1
+  }
+}

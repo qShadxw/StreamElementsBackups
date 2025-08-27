@@ -1,0 +1,33 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto');
+@font-face {
+    font-family: 'Huglove';
+    font-style: normal;
+    font-weight: 400;
+    font-stretch: 100%;
+    src: url("https://raw.githubusercontent.com/qShadxw/fonts/master/huglove/Huglove.woff2") format("woff2");
+}
+:root {
+    --font: 'sans-serif';
+    --font-size: 50px;
+    --background: rgba(0, 0, 0, 0);
+}
+* {
+    background: var(--background);
+    font-family: var(--font), Courier, monospace;
+    font-size: var(--font-size);
+}
+html, body {
+    height: 100%;
+    opacity: 1;
+}
+.main-container {
+    height: 100%;
+    padding: 0;
+    margin: 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.timer {
+    text-shadow: rgb(0, 0, 0) 1px 0px 0px, rgb(0, 0, 0) 0.540302px 0.841471px 0px, rgb(0, 0, 0) -0.416147px 0.909297px 0px, rgb(0, 0, 0) -0.989993px 0.14112px 0px, rgb(0, 0, 0) -0.653644px -0.756803px 0px, rgb(0, 0, 0) 0.283662px -0.958924px 0px, rgb(0, 0, 0) 0.96017px -0.279416px 0px;
+}
