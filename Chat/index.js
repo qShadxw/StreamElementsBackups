@@ -1,8 +1,66 @@
 // Global Vars
 let chatFormat, chatFont, chatSize, chatMessageDeleteDelay, chatColourR, chatColourG, chatColourB;
 
+// Debug Vars
+let debug = true;
+const twitchChatWords = [
+  // Emotes & shorthand
+  "Pog", "PogChamp", "LUL", "KEKW", "PepeLaugh", "monkaW", "Pepega", 
+  "FeelsBadMan", "BibleThump", "Kappa", "OMEGALUL", "EZ", "GG", 
+  "PepeHands", "HYPERS",
+
+  // Spammy hype words
+  "LET'S GO", "CLUTCH", "INSANE", "W", "SHEESH", "EZ clap", "RIP", 
+  "YOOOO", "BROOO", "GG EZ",
+
+  // Copy-pasta vibes
+  "copium", "cringe", "based", "ratio", "????", "malding", "sus",
+
+  // Game-related reactions
+  "HEADSHOT", "ONE TAP", "HUGE", "NO WAY", "STREAM SNIPER", "RNG", 
+  "BOT", "SMURF",
+
+  // Support/hype
+  "HI CHAT", "HI YOUTUBE", "LOVE YOU", "SUB HYPE", "RAID", "GIFTED", 
+  "DONO WALL"
+];
+const twitchUsernames = [
+  "xX_NoScope420_Xx",
+  "PogLord99",
+  "KappaKing",
+  "DankMemez",
+  "ClutchOrKick",
+  "UwU_GamerGirl",
+  "ShadowNinja",
+  "BigChungusTV",
+  "TryHardTimmy",
+  "EZClapMaster",
+  "SaltyTears",
+  "OmegaLulz",
+  "BasedWizard",
+  "CringeLord",
+  "PepegaPal",
+  "SusImposter",
+  "RatioRuler",
+  "WKeyWarrior",
+  "BotSlayer9000",
+  "StreamerSniper",
+  "RNGesus",
+  "HeadshotHarry",
+  "SubTrainConductor",
+  "GiftBombBob",
+  "HypeBeastXD",
+  "RaidBossRick",
+  "DonowallDanny"
+];
+
+// Util Functions
+const getRandomInt = function(max) {
+  return Math.floor(Math.random() * max);
+}
+
 // Event Functions
-const onLoad = function(obj) {
+const onLoad = async function(obj) {
     // Logs
     console.log("Loading Fields");
 
@@ -17,9 +75,20 @@ const onLoad = function(obj) {
     chatColourR = fieldData.chatColourR;
     chatColourG = fieldData.chatColourG;
     chatColourB = fieldData.chatColourB;
+
+    // Debug
+    if (debug) {
+        console.log("Starting Debug...");
+    }
+    
+    while (debug) {
+        addChatMessage(twitchUsernames[getRandomInt(twitchUsernames.length)], twitchChatWords[getRandomInt(twitchChatWords.length)], []);
+
+        await new Promise((resolve) => setTimeout(resolve, getRandomInt(3) * 1000));
+    }
 }
 
-const onEvent = function(obj) {
+const onEvent = async function(obj) {
     // Logs
     console.log("Event Processing...");
     
